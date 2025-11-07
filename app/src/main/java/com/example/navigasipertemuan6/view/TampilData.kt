@@ -13,3 +13,5 @@ fun TampilData() {
             Pair(first = stringResource(id = R.string.jenis_kelamin), second = "Lainnya"),
             Pair(first = stringResource(id = R.string.alamat), second = "Yogyakarta")
         )
+        Scaffold(
+            modifier = Modifier,
