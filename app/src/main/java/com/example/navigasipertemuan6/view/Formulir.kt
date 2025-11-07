@@ -25,12 +25,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.example.navigasipertemuan6.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(
     jenisK:List<String> = listOf("Laki-laki", "Perempuan"),
-    onSubmitBtnClick: () -> Unit
+    OnSubmitBtnClick: () -> Unit
 ) {
     Scaffold(
         modifier = Modifier,
@@ -38,7 +39,7 @@ fun FormIsian(
             TopAppBar(
                 title = { Text(text = stringResource(id = R.string.home), color = Color.White) },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
-                    containerColor = colorResource(id = R.color.real_700)
+                    containerColor = colorResource(id = R.color.teal_700)
                 )
             )
         }
