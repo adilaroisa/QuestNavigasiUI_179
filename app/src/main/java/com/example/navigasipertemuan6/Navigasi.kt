@@ -1,4 +1,4 @@
-package com.example.navigasipertemuan6.view
+package com.example.navigasipertemuan6
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -25,7 +25,7 @@ fun DataApp(
             modifier = Modifier.padding(paddingValues = isiRuang)
         ) {
             composable(route = Navigasi.Formulirku.name) {
-                FormIsian(
+                _root_ide_package_.com.example.navigasipertemuan6.view.FormIsian(
                     //pilihanJK = JenisJK.map { id -> konteks.resources.getString(id) },
                     OnSubmitBtnClick = {
                         navController.navigate(route = Navigasi.Detail.name)
@@ -33,7 +33,7 @@ fun DataApp(
                 )
             }
             composable(route = Navigasi.Detail.name) {
-                TampilData(
+                _root_ide_package_.com.example.navigasipertemuan6.view.TampilData(
                     onBackBtnClick = {
                         cancelAndBackToFormulir(navController)
                     }

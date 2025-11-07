@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.navigasipertemuan6.ui.theme.NavigasiPertemuan6Theme
-import com.example.navigasipertemuan6.view.DataApp
+import com.example.navigasipertemuan6.DataApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
